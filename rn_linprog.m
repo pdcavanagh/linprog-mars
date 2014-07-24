@@ -45,7 +45,7 @@ for i=1:num_phases
         F(1)=objfun;
         F(2:f_len)=0;
     else 
-        F(1:phase_index(1)-1)=0;
+        F(1:phase_index(i)-1)=0;
         F(phase_index(i)+1:f_len)=0;
     end
 
